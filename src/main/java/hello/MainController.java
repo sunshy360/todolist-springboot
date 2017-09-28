@@ -26,4 +26,19 @@ public class MainController {
         return todoItemsRepository.findAll();
     }
 
+    @PostMapping(path="/") // Map ONLY POST Requests
+    public @ResponseBody String addNewTodoItem (@RequestParam String itemname) {
+        // @ResponseBody means the returned String is the response, not a view name
+        // @RequestParam means it is a parameter from the GET or POST request
+
+        TodoItem todoItem = new TodoItem();
+        todoItem.setItemName(itemname);
+        todoItem.setDone(false);
+        currentDate = formatter.format(new Date());
+        todoItem.setTimestamp(currentDate);
+
+        todoItemsRepository.save(todoItem);
+        return "New todo item has been submitted";
+    }
+
 }
