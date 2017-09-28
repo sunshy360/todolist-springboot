@@ -11,5 +11,6 @@ import java.util.List;
 // CRUD refers Create, Read, Update, Delete
 
 public interface TodoItemsRepository extends CrudRepository<TodoItem, Long> {
-
+//    @Query("select u from #{#entityName} u where u.lastname = ?1")
+//    List<TodoItem> findByLastname(String lastname);
 }
