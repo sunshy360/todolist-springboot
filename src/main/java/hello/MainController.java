@@ -41,4 +41,22 @@ public class MainController {
         return "New todo item has been submitted";
     }
 
+    @DeleteMapping(path="/{id}") // Map ONLY DELETE Requests
+    public @ResponseBody String deleteTodoItem (@PathVariable("id") Long id) {
+        todoItemsRepository.delete(id);
+        return "The todo item has been deleted";
+    }
+
+
+//    @PutMapping(path="/{id}") // Map ONLY POST Requests
+//    public @ResponseBody String updateTodoItem (@PathVariable long id, @RequestParam String itemname) {
+//
+//        TodoItem todoItem = new TodoItem();
+//        todoItem.setItemName(itemname);
+//
+//        todoItemsRepository.
+//                todoItemsRepository.delete().save(todoItem);
+//        return "New todo item has been submitted";
+//    }
+
 }
