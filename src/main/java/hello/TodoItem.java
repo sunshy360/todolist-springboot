@@ -1,27 +1,26 @@
 package hello;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity // This tells Hibernate to make a table out of this class
 public class TodoItem {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Long id;
+    @Column(length = 64)
+    private Integer id;
 
+    @Column(length = 140)
     private String itemName;
 
     private boolean done;
 
     private String timestamp;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

@@ -4,10 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import hello.TodoItem;
-import hello.TodoItemsRepository;
-
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -42,18 +38,21 @@ public class MainController {
     }
 
     @PutMapping(path="/{id}") // Map ONLY PUT Requests
-    public @ResponseBody String updateTodoItem (@PathVariable("id") long id, @RequestParam String itemname
+    public @ResponseBody String updateTodoItem (@PathVariable("id") Integer id, @RequestParam String itemname
             , @RequestParam boolean done) {
 
-        TodoItem todoItem = todoItemsRepository.findOne(id);
+        //TodoItem todoItem = todoItemsRepository.findOne(id);
+        TodoItem todoItem = todoItemsRepository.findByItemName(itemname);
         todoItem.setItemName(itemname);
         todoItem.setDone(done);
+        currentDate = formatter.format(new Date());
+        todoItem.setTimestamp(currentDate);
         todoItemsRepository.save(todoItem);
         return "The todo item has been updated";
     }
 
     @DeleteMapping(path="/{id}") // Map ONLY DELETE Requests
-    public @ResponseBody String deleteTodoItem (@PathVariable("id") Long id) {
+    public @ResponseBody String deleteTodoItem (@PathVariable("id") Integer id) {
         todoItemsRepository.delete(id);
         return "The todo item has been deleted";
     }
