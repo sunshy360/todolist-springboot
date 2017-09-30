@@ -1,20 +1,23 @@
-package todoitems;
+package todoitems.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity // This tells Hibernate to make a table out of this class
 public class TodoItem {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(length = 64)
     private Integer id;
 
+    @NotNull
+    @Size(max = 140)
     @Column(length = 140)
-    private String itemName;
+    private String itemName = "";
 
-    private Boolean done;
+    private Boolean done = false;
 
-    private String timestamp;
+    private String timestamp = "";
 
     public Integer getId() {
         return id;
@@ -32,7 +35,7 @@ public class TodoItem {
         this.itemName = itemName;
     }
 
-    public boolean isDone() {
+    public Boolean getDone() {
         return done;
     }
 
