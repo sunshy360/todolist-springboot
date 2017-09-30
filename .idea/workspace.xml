@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1292f2cf-7378-4ac3-a98c-9f2962cd9c13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/todoitems/service/TodoItemsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/todoitems/util/ReplyMessage.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/todoitems/MainController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/todoitems/ResponseMessage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/todoitems/TodoItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/todoitems/TodoItemsRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/hello/Greeting.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/hello/HelloWorldConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/hello/HelloWorldController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/hello/HelloWorldConfigurationTests.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/todoitems/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/todoitems/controller/MainController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/todoitems/ResponseMessage.java" afterPath="$PROJECT_DIR$/src/main/java/todoitems/model/ResponseMessage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/todoitems/TodoItem.java" afterPath="$PROJECT_DIR$/src/main/java/todoitems/model/TodoItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/todoitems/TodoItemsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/todoitems/repository/TodoItemsRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/fileContent.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/application.properties" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/application.properties" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/todoitems/Application.java" afterPath="$PROJECT_DIR$/src/main/java/todoitems/Application.java" />
-    </list>
+    <list default="true" id="1292f2cf-7378-4ac3-a98c-9f2962cd9c13" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -135,8 +111,8 @@
       <file leaf-file-name="HttpStatus.java" pinned="false" current-in-tab="true">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.11.RELEASE/81b86c6cddc25feecf0bb2e11df3b7e56bafb806/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="185">
+              <caret line="336" column="25" lean-forward="false" selection-start-line="336" selection-start-column="18" selection-end-line="336" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -192,6 +168,7 @@
       <find>boolean</find>
       <find>controller</find>
       <find>todoItemsRepository</find>
+      <find>error</find>
     </findStrings>
     <dirStrings>
       <dir>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.11.RELEASE/50a3dfce550bdf9459dfb2c6282aa104b040258e/spring-web-4.3.11.RELEASE.jar!/org/springframework</dir>
@@ -1041,7 +1018,7 @@
       <updated>1506508216813</updated>
       <workItem from="1506508218471" duration="500000" />
       <workItem from="1506508740842" duration="27393000" />
-      <workItem from="1506676391725" duration="23600000" />
+      <workItem from="1506676391725" duration="24831000" />
     </task>
     <servers />
   </component>
@@ -1063,10 +1040,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51493000" />
+    <option name="totallyTimeSpent" value="52724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1086,7 +1064,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31876606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508998" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18383405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1416,8 +1394,8 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.11.RELEASE/81b86c6cddc25feecf0bb2e11df3b7e56bafb806/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="185">
+          <caret line="336" column="25" lean-forward="false" selection-start-line="336" selection-start-column="18" selection-end-line="336" selection-end-column="25" />
           <folding />
         </state>
       </provider>
